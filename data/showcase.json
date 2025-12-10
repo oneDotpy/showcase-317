@@ -1,0 +1,870 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 1.6,
+    "eye": [2, 2.2, 10],
+    "up": [0, 1, 0],
+    "look": [0, 0, -1],
+    "height": 1,
+    "width": 1.777777778,
+    "aperture": 0.11,
+    "focal_distance": 10.0
+  },
+
+  "lights":[
+    {
+      "type": "directional",
+      "color": [0.7, 0.68, 0.65],
+      "direction": [-0.5, -0.8, -0.35]
+    },
+    {
+      "type": "point",
+      "color": [0.5, 0.48, 0.45],
+      "position": [6, 12, 8]
+    },
+    {
+      "type": "point",
+      "color": [0.45, 0.43, 0.4],
+      "position": [-5, 10, 4]
+    }
+  ],
+
+  "materials": [
+    {
+      "name": "cherry pink",
+      "ka": [1.0, 0.7, 0.8],
+      "kd": [1.0, 0.75, 0.85],
+      "ks": [0.7, 0.6, 0.6],
+      "km": [0.01, 0.01, 0.01],
+      "phong_exponent": 130
+    },
+    {
+      "name": "soft pink",
+      "ka": [1.0, 0.8, 0.88],
+      "kd": [1.0, 0.85, 0.92],
+      "ks": [0.5, 0.5, 0.5],
+      "km": [0.01, 0.01, 0.01],
+      "phong_exponent": 100
+    },
+    {
+      "name": "bark brown",
+      "ka": [0.22, 0.14, 0.1],
+      "kd": [0.3, 0.2, 0.14],
+      "ks": [0.08, 0.06, 0.05],
+      "km": [0.01, 0.01, 0.01],
+      "phong_exponent": 35
+    },
+    {
+      "name": "dark bark",
+      "ka": [0.16, 0.1, 0.07],
+      "kd": [0.22, 0.14, 0.1],
+      "ks": [0.05, 0.04, 0.03],
+      "km": [0.01, 0.01, 0.01],
+      "phong_exponent": 25
+    },
+    {
+      "name": "grass",
+      "ka": [0.28, 0.42, 0.22],
+      "kd": [0.35, 0.52, 0.28],
+      "ks": [0.12, 0.15, 0.12],
+      "km": [0.01, 0.01, 0.01],
+      "phong_exponent": 28
+    },
+    {
+      "name": "sky",
+      "ka": [0.68, 0.82, 0.96],
+      "kd": [0.78, 0.9, 1.0],
+      "ks": [0.15, 0.15, 0.15],
+      "km": [0.02, 0.02, 0.02],
+      "phong_exponent": 35
+    }
+  ],
+
+  "objects": [
+    {
+      "type": "plane",
+      "material": "grass",
+      "point": [0, 0, 0],
+      "normal": [0, 1, 0]
+    },
+    {
+      "type": "plane",
+      "material": "sky",
+      "point": [0, 0, -30],
+      "normal": [0, 0, 1]
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [-2.5, 0.4, 1],
+      "radius": 0.35
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-2.5, 0.95, 1],
+      "radius": 0.32
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-2.5, 1.5, 1],
+      "radius": 0.28
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-2.6, 2.05, 1.1],
+      "radius": 0.24
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-2.4, 2.5, 0.9],
+      "radius": 0.2
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-3.1, 2.2, 1.3],
+      "radius": 0.18
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-1.9, 2.3, 0.7],
+      "radius": 0.18
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-2.5, 3.2, 1],
+      "radius": 1.1
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-3.4, 3.3, 1.4],
+      "radius": 0.9
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-1.6, 3.1, 0.6],
+      "radius": 0.95
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-2.9, 3.8, 1.2],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-2.1, 3.7, 0.8],
+      "radius": 0.75
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-2.5, 2.7, 0.4],
+      "radius": 0.65
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-2.5, 2.8, 1.6],
+      "radius": 0.6
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [2, 0.38, 0],
+      "radius": 0.32
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [2, 0.88, 0],
+      "radius": 0.3
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [2, 1.38, 0],
+      "radius": 0.26
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [1.95, 1.85, -0.1],
+      "radius": 0.22
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [2.05, 2.25, 0.1],
+      "radius": 0.18
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [1.5, 2.0, -0.3],
+      "radius": 0.16
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [2.5, 2.1, 0.3],
+      "radius": 0.16
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [2, 2.9, 0],
+      "radius": 1.0
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [2.8, 3.0, 0.35],
+      "radius": 0.85
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [1.2, 2.8, -0.35],
+      "radius": 0.9
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [2.4, 3.5, 0.2],
+      "radius": 0.65
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [1.6, 3.4, -0.2],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [2, 2.4, 0.6],
+      "radius": 0.58
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [2, 2.5, -0.6],
+      "radius": 0.62
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [-0.5, 0.35, 4.5],
+      "radius": 0.3
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-0.5, 0.82, 4.5],
+      "radius": 0.28
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-0.5, 1.28, 4.5],
+      "radius": 0.24
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-0.55, 1.7, 4.6],
+      "radius": 0.2
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-0.45, 2.05, 4.4],
+      "radius": 0.16
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-1.0, 1.85, 4.8],
+      "radius": 0.15
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [0.0, 1.9, 4.2],
+      "radius": 0.15
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-0.5, 2.65, 4.5],
+      "radius": 0.95
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-1.2, 2.7, 4.85],
+      "radius": 0.8
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [0.2, 2.6, 4.15],
+      "radius": 0.85
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-0.8, 3.2, 4.7],
+      "radius": 0.6
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-0.2, 3.15, 4.3],
+      "radius": 0.65
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-0.5, 2.2, 4.0],
+      "radius": 0.55
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-0.5, 2.3, 5.0],
+      "radius": 0.52
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [4.2, 0.4, 3.2],
+      "radius": 0.33
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [4.2, 0.92, 3.2],
+      "radius": 0.31
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [4.2, 1.42, 3.2],
+      "radius": 0.27
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [4.15, 1.88, 3.3],
+      "radius": 0.23
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [4.25, 2.28, 3.1],
+      "radius": 0.19
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [3.7, 2.05, 3.5],
+      "radius": 0.17
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [4.7, 2.15, 2.9],
+      "radius": 0.17
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [4.2, 3.0, 3.2],
+      "radius": 1.05
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [5.0, 3.1, 2.85],
+      "radius": 0.88
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [3.4, 2.95, 3.55],
+      "radius": 0.92
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [4.6, 3.6, 3.0],
+      "radius": 0.68
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [3.8, 3.55, 3.4],
+      "radius": 0.72
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [4.2, 2.5, 2.6],
+      "radius": 0.6
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [4.2, 2.6, 3.8],
+      "radius": 0.57
+    },
+
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-1.2, 0.12, 2.5],
+      "radius": 0.11
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [0.8, 0.1, 2],
+      "radius": 0.09
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [3, 0.13, 1.5],
+      "radius": 0.12
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-3.5, 0.11, 3],
+      "radius": 0.1
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [1.5, 0.14, 5],
+      "radius": 0.13
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-2, 0.09, 5.5],
+      "radius": 0.08
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [5, 0.12, 4],
+      "radius": 0.11
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-0.2, 0.11, 0.8],
+      "radius": 0.1
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [2.8, 0.13, 6],
+      "radius": 0.12
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-4, 0.1, 1.2],
+      "radius": 0.09
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [-6, 0.35, -5],
+      "radius": 0.28
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-6, 0.95, -5],
+      "radius": 0.25
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-6, 1.65, -5],
+      "radius": 0.75
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-6.5, 1.8, -4.7],
+      "radius": 0.6
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-5.5, 1.75, -5.3],
+      "radius": 0.65
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [5.5, 0.35, -6],
+      "radius": 0.3
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [5.5, 0.98, -6],
+      "radius": 0.27
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [5.5, 1.7, -6],
+      "radius": 0.8
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [6.2, 1.85, -5.7],
+      "radius": 0.65
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [4.8, 1.8, -6.3],
+      "radius": 0.7
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [0, 0.32, -8],
+      "radius": 0.26
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [0, 0.85, -8],
+      "radius": 0.23
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [0, 1.5, -8],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-0.6, 1.62, -7.7],
+      "radius": 0.55
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [0.6, 1.58, -8.3],
+      "radius": 0.6
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [-3.5, 0.33, -7],
+      "radius": 0.27
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-3.5, 0.88, -7],
+      "radius": 0.24
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-3.5, 1.55, -7],
+      "radius": 0.72
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-4.1, 1.68, -6.7],
+      "radius": 0.58
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-2.9, 1.62, -7.3],
+      "radius": 0.62
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [3, 0.34, -7.5],
+      "radius": 0.28
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [3, 0.9, -7.5],
+      "radius": 0.25
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [3, 1.6, -7.5],
+      "radius": 0.75
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [3.6, 1.72, -7.2],
+      "radius": 0.6
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [2.4, 1.68, -7.8],
+      "radius": 0.65
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [7, 0.36, -9],
+      "radius": 0.29
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [7, 0.95, -9],
+      "radius": 0.26
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [7, 1.65, -9],
+      "radius": 0.78
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [7.6, 1.78, -8.7],
+      "radius": 0.62
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [6.4, 1.72, -9.3],
+      "radius": 0.68
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [9, 0.35, -11],
+      "radius": 0.27
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [9, 0.88, -11],
+      "radius": 0.24
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [9, 1.52, -11],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [9.5, 1.63, -10.8],
+      "radius": 0.56
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [8.5, 1.58, -11.2],
+      "radius": 0.6
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [5, 0.34, -10],
+      "radius": 0.28
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [5, 0.91, -10],
+      "radius": 0.25
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [5, 1.58, -10],
+      "radius": 0.73
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [5.6, 1.7, -9.7],
+      "radius": 0.58
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [4.4, 1.65, -10.3],
+      "radius": 0.63
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [-7.5, 0.33, -10],
+      "radius": 0.27
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-7.5, 0.87, -10],
+      "radius": 0.24
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-7.5, 1.5, -10],
+      "radius": 0.7
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-8, 1.62, -9.8],
+      "radius": 0.56
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-7, 1.58, -10.2],
+      "radius": 0.6
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [1.5, 0.31, -12],
+      "radius": 0.25
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [1.5, 0.82, -12],
+      "radius": 0.22
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [1.5, 1.42, -12],
+      "radius": 0.65
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [2, 1.52, -11.8],
+      "radius": 0.52
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [1, 1.48, -12.2],
+      "radius": 0.56
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [-2, 0.32, -11],
+      "radius": 0.26
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [-2, 0.84, -11],
+      "radius": 0.23
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [-2, 1.45, -11],
+      "radius": 0.68
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-2.5, 1.56, -10.7],
+      "radius": 0.54
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [-1.5, 1.52, -11.3],
+      "radius": 0.58
+    },
+
+    {
+      "type": "sphere",
+      "material": "dark bark",
+      "center": [11, 0.34, -14],
+      "radius": 0.26
+    },
+    {
+      "type": "sphere",
+      "material": "bark brown",
+      "center": [11, 0.86, -14],
+      "radius": 0.23
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [11, 1.48, -14],
+      "radius": 0.66
+    },
+    {
+      "type": "sphere",
+      "material": "soft pink",
+      "center": [11.5, 1.58, -13.8],
+      "radius": 0.53
+    },
+    {
+      "type": "sphere",
+      "material": "cherry pink",
+      "center": [10.5, 1.54, -14.2],
+      "radius": 0.57
+    }
+  ]
+}

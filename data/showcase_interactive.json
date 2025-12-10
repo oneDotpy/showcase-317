@@ -1,0 +1,143 @@
+{
+  "camera": {
+    "type": "perspective",
+    "focal_length": 1.5,
+    "eye": [0, 0.3, 3.5],
+    "up": [0, 1, 0],
+    "look": [0, -0.05, -1],
+    "height": 1,
+    "width": 1.777777778,
+
+    "_comment": "ADJUST THESE FOR DIFFERENT EFFECTS:",
+    "aperture": 0.12,
+    "focal_distance": 3.3,
+
+    "_tips": {
+      "aperture": "0.0 = no blur, 0.05 = subtle, 0.12 = medium, 0.2 = strong bokeh",
+      "focal_distance": "Distance to focus plane (try 2.0-5.0)",
+      "quick_presets": {
+        "sharp_everything": { "aperture": 0.0 },
+        "portrait_mode": { "aperture": 0.15, "focal_distance": 3.3 },
+        "macro_close": { "aperture": 0.2, "focal_distance": 2.5 },
+        "landscape": { "aperture": 0.03, "focal_distance": 5.0 }
+      }
+    }
+  },
+
+  "lights":[
+    {
+      "type": "directional",
+      "color": [0.4, 0.38, 0.35],
+      "direction": [-0.3, -0.7, -0.4]
+    },
+    {
+      "type": "point",
+      "color": [0.6, 0.55, 0.5],
+      "position": [2, 3, 2]
+    },
+    {
+      "type": "point",
+      "color": [0.3, 0.32, 0.35],
+      "position": [-1.5, 1, 3]
+    }
+  ],
+
+  "materials": [
+    {
+      "name": "wood table",
+      "ka": [0.3, 0.2, 0.15],
+      "kd": [0.4, 0.25, 0.18],
+      "ks": [0.1, 0.1, 0.1],
+      "km": [0.02, 0.02, 0.02],
+      "phong_exponent": 50
+    },
+    {
+      "name": "ceramic white",
+      "ka": [0.85, 0.82, 0.78],
+      "kd": [0.9, 0.88, 0.85],
+      "ks": [0.4, 0.4, 0.4],
+      "km": [0.08, 0.08, 0.08],
+      "phong_exponent": 400
+    },
+    {
+      "name": "brass",
+      "ka": [0.7, 0.5, 0.2],
+      "kd": [0.8, 0.6, 0.25],
+      "ks": [0.6, 0.6, 0.5],
+      "km": [0.15, 0.12, 0.08],
+      "phong_exponent": 600
+    },
+    {
+      "name": "soft gray",
+      "ka": [0.4, 0.42, 0.45],
+      "kd": [0.5, 0.52, 0.55],
+      "ks": [0.15, 0.15, 0.15],
+      "km": [0.04, 0.04, 0.04],
+      "phong_exponent": 100
+    },
+    {
+      "name": "matte red",
+      "ka": [0.6, 0.15, 0.12],
+      "kd": [0.7, 0.2, 0.15],
+      "ks": [0.2, 0.1, 0.1],
+      "km": [0.03, 0.02, 0.02],
+      "phong_exponent": 80
+    },
+    {
+      "name": "deep blue",
+      "ka": [0.15, 0.25, 0.45],
+      "kd": [0.2, 0.35, 0.6],
+      "ks": [0.25, 0.25, 0.3],
+      "km": [0.05, 0.05, 0.08],
+      "phong_exponent": 200
+    }
+  ],
+
+  "objects": [
+    {
+      "type": "plane",
+      "material": "wood table",
+      "point": [0, -0.5, 0],
+      "normal": [0, 1, 0]
+    },
+    {
+      "type": "sphere",
+      "material": "ceramic white",
+      "center": [0, 0, 0],
+      "radius": 0.5,
+      "_note": "Main focus sphere at z=3.5, so focal_distance should be ~3.3-3.5"
+    },
+    {
+      "type": "sphere",
+      "material": "brass",
+      "center": [-0.9, -0.2, 0.4],
+      "radius": 0.3
+    },
+    {
+      "type": "sphere",
+      "material": "soft gray",
+      "center": [0.8, -0.15, 0.6],
+      "radius": 0.35
+    },
+    {
+      "type": "sphere",
+      "material": "matte red",
+      "center": [-0.4, -0.3, 1.2],
+      "radius": 0.2,
+      "_note": "Foreground sphere - will be blurred"
+    },
+    {
+      "type": "sphere",
+      "material": "deep blue",
+      "center": [0.5, -0.25, -0.5],
+      "radius": 0.25,
+      "_note": "Background sphere - will have bokeh"
+    },
+    {
+      "type": "plane",
+      "material": "soft gray",
+      "point": [0, 0, -2],
+      "normal": [0, 0, 1]
+    }
+  ]
+}
